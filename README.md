@@ -1,3 +1,42 @@
+![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
+![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
+![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
+[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
+
+# Create app with react
+
+_create app - local virtual bulletin board_
+
+<br>
+
+## 🌟 About
+
+This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
+
+Site published at: 
+
+Design: https://www.figma.com/proto/lPpigQN78ICvOZV0BXmYot/Sandra-Ma%C5%BEeikait%C4%97---Lokal?node-id=746-17201&viewport=1516%2C-3281%2C0.2&scaling=scale-down&starting-point-node-id=746%3A17201
+
+## 🎯 Project features/goals
+
+-   Github pages
+-   responsive design (priority for mobile design)
+-   active register form
+-   active login form
+-   pages and navigation between them
+-   React icons
+-   database
+-   localStorage
+
+## 🎅 Authors
+
+Ditta: [Github](https://github.com/dittamaz)
+
+## ⚠️ License
+
+Distributed under the MIT License. See LICENSE.txt for more information.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
