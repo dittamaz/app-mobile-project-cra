@@ -1,6 +1,11 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+
+.imgAbout {
+    width: 230px;
 }
