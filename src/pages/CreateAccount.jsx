@@ -1,5 +1,4 @@
 import { Link, useNavigate } from 'react-router-dom';
-import style from '..//App.module.css';
 import style2 from '../components/Form.module.css';
 import style3 from '..//components/Buttons.module.css';
 import style4 from '..//pages/Welcome.module.css';
@@ -77,7 +76,7 @@ export function CreateAccount() {
          <>
             <h1 className={style4.title}>Welcome to local!</h1>
             <p>Firstly, tell us a bit about yorself.</p>
-                <div className={`${style.error} ${errors.length ? style.show : ''}`}>
+                <div className={`${style2.error} ${errors.length ? style2.show : ''}`}>
                     {errors.map((err, index) => <p key={index}>{err}</p>)}
                 </div>
             <form className={style2.form}>
@@ -85,14 +84,15 @@ export function CreateAccount() {
                     <input onChange={updateName} value={name} placeholder="Name" id='name' type="text" required />
                 </div>
                 <div>
-                    <input onChange={updateEmail} value={email} placeholder="Surname" id='email' type="text" required />
+                    <input onChange={updateEmail} value={email} placeholder="Email" id='email' type="text" required />
                     </div>
                 <div>
                     <input onChange={updatePassword} value={password} placeholder="Passvord" id='password' type="password" required />
                 </div>
             </form>
             <div>
-            <Link className={style3.btn} onClick={registerUser} to='/nopage'>Continue</Link>  
+            <Link className={style3.btn} onClick={registerUser} to='/profile'>Continue</Link>  
+            <p className={style2.text} >Have an account? <Link className={style2.text} to='/login'>Log in</Link></p>
             </div>
         </>
     );

@@ -23,3 +23,8 @@
 .error.show {
     display: block;
 }
+.text {
+    padding: 1rem;
+    align-items: center;
+    font-size: 1rem;
+}
