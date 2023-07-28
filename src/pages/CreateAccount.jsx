@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import style from '../components/Form.module.css';
-import style2 from '..//App.module.css';
+import { Link, useNavigate } from 'react-router-dom';
+import style from '..//App.module.css';
+import style2 from '../components/Form.module.css';
 import style3 from '..//components/Buttons.module.css';
 import style4 from '..//pages/Welcome.module.css';
 
 import { useState, useEffect } from 'react';
-
 
 export function CreateAccount() {
     const [name, setName] = useState('');
@@ -13,6 +12,7 @@ export function CreateAccount() {
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState([]);
     const [users, setUsers] = useState(() => JSON.parse(localStorage.getItem('users')) || []);
+    const navigate = useNavigate();
     
     function updateName(e) {
         setName(e.target.value);
@@ -64,6 +64,7 @@ export function CreateAccount() {
             const newUser = { name, email, password };
             setUsers((prev) => [...prev, newUser]);
             localStorage.setItem('users', JSON.stringify([...users, newUser]));
+            navigate('/login');
         }
     }
 
@@ -76,10 +77,10 @@ export function CreateAccount() {
          <>
             <h1 className={style4.title}>Welcome to local!</h1>
             <p>Firstly, tell us a bit about yorself.</p>
-                <div className={`${style2.error} ${errors.length ? style2.show : ''}`}>
+                <div className={`${style.error} ${errors.length ? style.show : ''}`}>
                     {errors.map((err, index) => <p key={index}>{err}</p>)}
                 </div>
-            <form className={style.form}>
+            <form className={style2.form}>
                 <div>
                     <input onChange={updateName} value={name} placeholder="Name" id='name' type="text" required />
                 </div>
@@ -90,7 +91,9 @@ export function CreateAccount() {
                     <input onChange={updatePassword} value={password} placeholder="Passvord" id='password' type="password" required />
                 </div>
             </form>
-            <Link className={style3.btn} to='/'>Continue</Link>  
+            <div>
+            <Link className={style3.btn} onClick={registerUser} to='/nopage'>Continue</Link>  
+            </div>
         </>
     );
 }

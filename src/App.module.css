@@ -1,4 +1,7 @@
 .app {
-    display: grid;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+    align-items: center;
 }
