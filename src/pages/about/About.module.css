@@ -1,11 +1,15 @@
 .about {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     padding: 2rem;
+    align-items: center;
 }
 
 
-.imgAbout {
+.first {
     width: 230px;
 }
+
+
+

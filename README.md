@@ -14,7 +14,7 @@ _create app - local virtual bulletin board_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-Site published at: 
+Site published at: https://github.com/dittamaz/app-mobile-project-cra
 
 Design: https://www.figma.com/proto/lPpigQN78ICvOZV0BXmYot/Sandra-Ma%C5%BEeikait%C4%97---Lokal?node-id=746-17201&viewport=1516%2C-3281%2C0.2&scaling=scale-down&starting-point-node-id=746%3A17201
 

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { About } from './pages/About';
+import { About } from './pages/about/About';
 import { NoPage } from "./pages/NoPage";
 import { Welcome } from "./pages/Welcome";
 import style from './App.module.css';
