@@ -10,7 +10,7 @@ import { ThreeDots } from '../../assets/ThreeDots';
 export function About2 () {
     return (
         <div className={style.about} >
-            <h1 className={style4.title} >Exchange goods and services with your neighbors.</h1>
+            <h1 className={style4.title} >Organize events in your local community.</h1>
             <img className={style.second}  src={second} alt="second" />
             <div>
                 <ThreeDots />

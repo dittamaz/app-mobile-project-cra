@@ -1,0 +1,29 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: center;
+    gap: 2rem;
+    background-color: #fff
+}
+
+.form input {
+    width: 100%;
+    padding: 0.9em;
+    font-size: 1em;
+    border-radius: 1rem;
+}
+
+.form button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #132d61;
+}
+
+.error {
+    color: red;
+}
