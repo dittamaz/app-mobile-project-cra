@@ -1,11 +1,13 @@
-import style from './NoPage.module.css';
+import style2 from './Welcome.module.css';
+import style3 from '../components/Buttons.module.css';
+import style4 from './Welcome.module.css'
 
-export function NoPage () {
+export function NoPage() {
     return (
-        <div className={style.nopage} >
+        <div className={style2.welcome}>
             <h1>404</h1>
-            <p>Page not found</p>
-            <a className={style.link} href="/">Go home</a>
+            <p className={style4.title}>Page not found</p>
+            <a className={style3.btn} href="/">go home</a>
         </div>
-    );
+    )
 }
