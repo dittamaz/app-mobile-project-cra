@@ -1,0 +1,19 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    align-items: center;
+}
+
+.title {
+    text-transform: capitalize;
+    color: #264175;
+    font-size: 2rem;
+}
+
