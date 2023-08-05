@@ -1,15 +1,13 @@
 import style from './About.module.css';
-import second from '../..//img/second.svg';
+import second from '../../assets/img/second.svg';
 import { Link } from 'react-router-dom';
 import style3 from '..//../components/Buttons.module.css';
 import style4 from '..//Welcome.module.css';
-import { ThreeDots } from '../../assets/ThreeDots';
-
-
+import { ThreeDots } from '..//../components/ThreeDots';
 
 export function About2 () {
     return (
-        <div className={style.about} >
+        <div className={style.about} id='slide'>
             <h1 className={style4.title} >Organize events in your local community.</h1>
             <img className={style.second}  src={second} alt="second" />
             <div>

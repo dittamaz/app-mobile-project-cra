@@ -1,5 +1,5 @@
 import style2 from './Welcome.module.css';
-import logo from '../img/logo.svg';
+import logo from '../assets/img/logo.svg';
 import style from './about/About.module.css';
 import style3 from '../components/Buttons.module.css';
 import style4 from './Welcome.module.css'

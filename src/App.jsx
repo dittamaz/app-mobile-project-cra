@@ -17,9 +17,9 @@ function App() {
           <Route>
             <Route index path="/" element={<Welcome />} />
             <Route path="/about" element={<About />} /> 
-            <Route path="/about/2" element={<About2 />} />  
-            <Route path="/about/3" element={<About3 />} /> 
-            <Route path="/createaccount" element={<CreateAccount />} /> 
+            <Route path="/about/2" element={<About2 />} />
+            <Route path="/about/3" element={<About3 />} />
+            <Route path="/createAccount" element={<CreateAccount />} />
             <Route path="/login" element={<Login />} /> 
             <Route path="/profile" element={<Profile />} />  
             <Route path="*" element={<NoPage />} />
