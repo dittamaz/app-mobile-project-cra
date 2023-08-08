@@ -10,21 +10,3 @@
     font-size: 0.9rem;
     border-radius: 1.6em;
 }
-
-.error {
-    display: none;
-    width: 100%;
-    margin-top: 2rem;
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 1rem;
-    background-color: #D3455B;
-}
-.error.show {
-    display: block;
-}
-.text {
-    padding: 1rem;
-    align-items: center;
-    font-size: 1rem;
-}

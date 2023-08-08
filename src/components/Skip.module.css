@@ -1,0 +1,11 @@
+.skipLink {
+    display: flex;
+    flex-direction: column;
+    color: #b4b9c3;
+    text-decoration: none;
+    align-items: end;
+}
+
+.skipLink:hover {
+    color:#dfaf67;
+}

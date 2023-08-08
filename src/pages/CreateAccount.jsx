@@ -79,20 +79,20 @@ export function CreateAccount() {
             <h1 className={style4.title}>Welcome to local!</h1>
             <p>Firstly, tell us a bit about yorself.</p>
             <form className={style.form}>
-                {(nameDirty && nameError) && <div style={{color:'red'}}>{nameError}</div>}
+                {(nameDirty && nameError) && <div style={{color:'#D3455B'}}>{nameError}</div>}
                 <input onChange={e => nameHandler(e)} value={name} onBlur={e => blurHandler(e)} name='name' type='text' placeholder='Name'/>
                 
-                {(emailDirty && emailError) && <div style={{color:'red'}}>{emailError}</div>}
+                {(emailDirty && emailError) && <div style={{color:'#D3455B'}}>{emailError}</div>}
                 <input onChange={e => emailHandler(e)} value={email} onBlur={e => blurHandler(e)} name='email' type='text' placeholder='Email'/>
                
-                {(passwordDirty && passwordError) && <div style={{color:'red'}}>{passwordError}</div>}
+                {(passwordDirty && passwordError) && <div style={{color:'#D3455B'}}>{passwordError}</div>}
                 <input onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)} name='password' type='password' placeholder='Password'/>
                 
-                <button to='/profile' disabled={!formValid} className={style3.btn} type='submit'>Register</button>
-                
+                <button disabled={!formValid} className={style3.btn} to='/profile' type='submit'>Register</button>
+                <p>or</p>
                 <Link to='/login'className={style3.btn} >Login</Link>  
             </form>
-    </>
+        </>
     );
 };
 
